@@ -19,8 +19,8 @@ python3 manage.py makemigrations
 python3 manage.py migrate
 ~~~  
 5. Use the home page url `localhost:8000/`  
-6. You will see the the home page with the paths we can use and how to use them:
-![home](https://user-images.githubusercontent.com/78990484/149033625-7abea25f-4797-4f1b-8c7a-a5a376c41e7d.png)
+
+You will see the the home page with the paths we can use and how to use them
 
 
 # Validate code linter  
