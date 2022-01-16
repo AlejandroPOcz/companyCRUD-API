@@ -37,9 +37,4 @@ urlpatterns = [
         views.companyDelete,
         name='company-delete'
     ),
-    # path(
-    #     'company-api/<str:company>',
-    #     views.tryingAPI,
-    #     name='trying-api'
-    # ),
 ]

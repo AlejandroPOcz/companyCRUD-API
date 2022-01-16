@@ -8,6 +8,7 @@ from rest_framework import serializers
 
 # Flink
 from .models import Company
+from flink_test.settings import YAHOO_API_HEADERS, YAHOO_API_URL
 
 
 class CompanySerializer(serializers.ModelSerializer):
@@ -34,15 +35,12 @@ class CompanySerializer(serializers.ModelSerializer):
             raise serializers.ValidationError()
 
         # Symbol Validation
-        url = "https://yh-finance.p.rapidapi.com/stock/v2/get-profile"
+        url = YAHOO_API_URL
         querystring = {
             "symbol": data["symbol"],
             "region": "US"
         }
-        headers = {
-            'x-rapidapi-host': "yh-finance.p.rapidapi.com",
-            'x-rapidapi-key': "ef5e61af6fmshb1c542323fac8bbp1039ebjsn76388d41ff10"
-            }
+        headers = YAHOO_API_HEADERS
         response = requests.request(
             "GET",
             url,

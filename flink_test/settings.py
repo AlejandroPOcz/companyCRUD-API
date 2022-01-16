@@ -131,3 +131,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+YAHOO_API_URL = "https://yh-finance.p.rapidapi.com/stock/v2/get-profile"
+
+YAHOO_API_HEADERS = {
+    'x-rapidapi-host': "yh-finance.p.rapidapi.com",
+    'x-rapidapi-key': "ef5e61af6fmshb1c542323fac8bbp1039ebjsn76388d41ff10"
+}

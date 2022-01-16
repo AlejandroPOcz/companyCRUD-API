@@ -161,27 +161,3 @@ def companyDelete(request, id):
             {"error": f"{e}"},
             status=status.HTTP_404_NOT_FOUND
         )
-
-
-# @api_view(['GET'])
-# def tryingAPI(request, company):
-#     url = "https://yh-finance.p.rapidapi.com/stock/v2/get-profile"
-
-#     querystring = {
-#         "symbol":company,
-#         "region":"US"
-#     }
-
-#     headers = {
-#         'x-rapidapi-host': "yh-finance.p.rapidapi.com",
-#         'x-rapidapi-key': "ef5e61af6fmshb1c542323fac8bbp1039ebjsn76388d41ff10"
-#         }
-
-    # response = requests.request(
-    #     "GET",
-    #     url,
-    #     headers=headers,
-    #     params=querystring
-    # )
-
-#     return Response(response, status=response.status_code)
